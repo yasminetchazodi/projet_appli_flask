@@ -1,0 +1,39 @@
+
+{% extends "base.html" %} {% block title%}LOGIN{% endblock%}
+ 
+{% block content %}
+<div class="alert alert-warning">
+  <i class="fas fa-exclamation-triangle"></i>
+  <strong>Attention!</strong> pour vous connecter vous deviez avoir un compte au préalable.
+</div>
+
+<form action="" method="POST">
+  <h3 align="center">Connectez-vous</h3>
+
+  <div class="form-group">
+      <label for="email">Email</label>
+      <input 
+      type="email" 
+      class="form-control" 
+      id="email" name="email" 
+      placeholder="Entrez votre email"/>
+  </div>
+
+  <div class="form-group">
+      <label for="password">Mot de passe</label>
+      <input 
+      type="password" 
+      class="form-control" 
+      id="password" name="password" 
+      placeholder="Entrez votre mot de passe"/>
+  </div>
+  
+  <br>
+  <input type="submit" class="btn btn-primary" value="Envoyer"/>
+  <input class="btn btn-primary" type="reset" value="annuler">
+
+
+</form>
+
+
+{% endblock %}

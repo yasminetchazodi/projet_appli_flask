@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block title%}SIGN-UP{% endblock%}
+ 
+{% block content %}
+<form action="" method="POST">
+    <h3 align="center">Procedez à votre enregistrement ☺☺☺☻☻☺☺☺</h3>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+        type="email" 
+        class="form-control" 
+        id="email" name="email" 
+        placeholder="Entrez votre email"/>
+    </div>
+
+    <div class="form-group">
+        <label for="nom">Nom</label>
+        <input 
+        type="text" 
+        class="form-control" 
+        id="nom" name="nom" 
+        placeholder="Entrez votre nom"/>
+    </div>
+
+    <div class="form-group">
+        <label for="prenom">Prénom</label>
+        <input 
+        type="text" 
+        class="form-control" 
+        id="prenom" name="prenom" 
+        placeholder="Entrez votre prénom"/>
+    </div>
+
+    <div class="form-group">
+        <label for="username">Nom d'utilisateur</label>
+        <input 
+        type="text" 
+        class="form-control" 
+        id="username" name="username" 
+        placeholder="Personnalisez votre nom d'utilisateur"/>
+    </div>
+
+    <div class="form-group">
+        <label for="password1">Mot de passe</label>
+        <input 
+        type="password" 
+        class="form-control" 
+        id="password1" name="password1" 
+        placeholder="Entrez un mot de passe"/>
+    </div>
+
+    <div class="form-group">
+        <label for="password2">Mot de passe</label>
+        <input 
+        type="password" 
+        class="form-control" 
+        id="password2" name="password2" 
+        placeholder="Confirmez votre mot de passe"/>
+    </div>
+
+    
+    <br>
+    <input type="submit" class="btn btn-primary" value="Envoyer">
+  <input class="btn btn-primary" type="reset" value="annuler">
+
+
+</form>
+{% endblock %}  
